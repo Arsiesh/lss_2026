@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LSS No. 38 – Day 2 Schedule</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f0f4f8;
+      color: #1a202c;
+      padding: 16px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1a3a6b, #2d5fa6);
+      color: white;
+      border-radius: 16px;
+      padding: 20px 16px;
+      text-align: center;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(26,58,107,0.3);
+    }
+
+    header h1 { font-size: 1.1rem; font-weight: 700; letter-spacing: 0.5px; margin-bottom: 4px; }
+    header h2 { font-size: 1.4rem; font-weight: 800; margin-bottom: 6px; }
+    header p  { font-size: 0.85rem; opacity: 0.88; }
+
+    .color-badge {
+      display: inline-block;
+      background: #718096;
+      border: 2px solid white;
+      color: white;
+      border-radius: 20px;
+      padding: 3px 14px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin-top: 8px;
+      letter-spacing: 1px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 14px;
+      padding: 14px 16px;
+      margin-bottom: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      border-left: 5px solid #2d5fa6;
+    }
+    .card.highlight  { border-left-color: #e53e3e; background: #fff5f5; }
+    .card.praise     { border-left-color: #805ad5; background: #faf5ff; }
+    .card.food       { border-left-color: #38a169; background: #f0fff4; }
+    .card.mass       { border-left-color: #d69e2e; background: #fffff0; }
+    .card.commission { border-left-color: #00b5d8; background: #ebf8ff; }
+    .card.closing    { border-left-color: #1a3a6b; background: #ebf4ff; }
+
+    .time-label {
+      font-size: 0.75rem; font-weight: 700; color: #2d5fa6;
+      text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 5px;
+    }
+    .card.highlight  .time-label { color: #e53e3e; }
+    .card.praise     .time-label { color: #805ad5; }
+    .card.food       .time-label { color: #38a169; }
+    .card.mass       .time-label { color: #b7791f; }
+    .card.commission .time-label { color: #0987a0; }
+    .card.closing    .time-label { color: #1a3a6b; }
+
+    .activity-title {
+      font-size: 1rem; font-weight: 700; margin-bottom: 6px; line-height: 1.3;
+    }
+
+    .committee {
+      display: inline-block; background: #edf2f7; color: #4a5568;
+      border-radius: 8px; padding: 2px 10px; font-size: 0.72rem;
+      font-weight: 600; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;
+    }
+
+    .details { font-size: 0.85rem; color: #4a5568; line-height: 1.6; }
+    .details li { margin-left: 16px; margin-bottom: 2px; }
+
+    .song-list {
+      margin-top: 6px; padding: 8px 12px;
+      background: rgba(128,90,213,0.08); border-radius: 8px;
+      font-size: 0.82rem; color: #553c9a;
+    }
+    .song-list strong { display: block; margin-bottom: 3px; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; }
+    .song-item::before { content: "🎵 "; }
+
+    .section-divider {
+      text-align: center; font-size: 0.7rem; font-weight: 700; color: #a0aec0;
+      letter-spacing: 2px; text-transform: uppercase; margin: 18px 0 10px;
+    }
+
+    .name-field {
+      display: inline-block; background: #e2e8f0; border-radius: 6px;
+      padding: 2px 10px; font-size: 0.8rem; color: #718096; margin-top: 4px;
+    }
+
+    .warning {
+      margin-top: 6px; padding: 6px 10px; background: #fed7d7;
+      border-radius: 8px; font-size: 0.82rem; color: #c53030; font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Life in the Spirit Seminar No. 38</h1>
+    <h2>LSS PROPER HOUR BY HOUR</h2>
+    <p>Day 2 — March 22, 2026 — Sunday</p>
+    <span class="color-badge">⚪ COLOR OF THE DAY: WHITE</span>
+  </header>
+
+  <!-- 6:30 AM -->
+  <div class="card">
+    <div class="time-label">6:30 AM</div>
+    <div class="activity-title">LSS Team Assembly</div>
+    <span class="committee">LSS Team</span>
+    <div class="details">
+      <ul><li>LSS Team assembles at St. James Parish Hall – Malvar Side</li></ul>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="time-label">6:30 AM</div>
+    <div class="activity-title">Check CS Hall & Hall A</div>
+    <span class="committee">Service Team</span>
+    <div class="details">
+      <ul><li>Make sure sound technician checks all microphones & aircons</li></ul>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="time-label">6:30 AM — Set-Up</div>
+    <div class="activity-title">Venue Setup</div>
+    <span class="committee">Service</span>
+    <div class="details">
+      <ul>
+        <li>Conference Room</li>
+        <li>Restrooms</li>
+        <li>Hall A</li>
+        <li>Registration Area — Secretariat</li>
+        <li>Food Area — Food</li>
+        <li>Vigil Area — Piety</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="time-label">6:30 AM</div>
+    <div class="activity-title">Sealing of the Venue</div>
+    <span class="committee">Piety</span>
+  </div>
+
+  <!-- 7:00 AM -->
+  <div class="card praise">
+    <div class="time-label">7:00 AM</div>
+    <div class="activity-title">Anointing — CS Hall</div>
+    <span class="committee">Piety / Praise Ministry</span>
+    <div class="details">
+      <ul>
+        <li>Prepare Holy Oil in vials</li>
+        <li>LSS Team, Shepherds, Praise Min., Auxies, Sharers</li>
+        <li>Anointer of the Day: <span class="name-field">_______________</span></li>
+        <li>Instrumentalist: <strong>Charlie Rancudo</strong></li>
+        <li>Prayer Leader: <span class="name-field">_______________</span></li>
+      </ul>
+      <div class="song-list">
+        <strong>Songs</strong>
+        <div class="song-item">Breathe on Me</div>
+        <div class="song-item">Potter's Hand</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7:30 AM -->
+  <div class="card">
+    <div class="time-label">7:30 AM</div>
+    <div class="activity-title">Registration Opens</div>
+    <span class="committee">Secretariat</span>
+  </div>
+
+  <div class="card food">
+    <div class="time-label">7:30 AM</div>
+    <div class="activity-title">Breakfast</div>
+    <span class="committee">Food</span>
+  </div>
+
+  <div class="card">
+    <div class="time-label">7:30 AM — Prep</div>
+    <div class="activity-title">Prepare for Bible Enthronement</div>
+    <span class="committee">Intercessory</span>
+    <div class="details">
+      <ul><li>Prepare Powerpoint of Responsorial Psalm, Bible, and candles</li></ul>
+    </div>
+  </div>
+
+  <!-- 8:00 AM -->
+  <div class="card">
+    <div class="time-label">8:00 AM</div>
+    <div class="activity-title">Ring Bell — Signal Start of LSS Proper</div>
+    <span class="committee">Service</span>
+  </div>
+
+  <!-- 8:15 AM -->
+  <div class="card highlight">
+    <div class="time-label">8:15 AM</div>
+    <div class="activity-title">Usher Lambs into MPH</div>
+    <span class="committee">Flock Coordinators</span>
+    <div class="details">
+      <div class="warning">⚠️ Make sure ANOINTING IS ALREADY FINISHED before letting lambs in</div>
+    </div>
+  </div>
+
+  <!-- 8:30 AM -->
+  <div class="card">
+    <div class="time-label">8:30 – 8:45 AM</div>
+    <div class="activity-title">Bible Enthronement</div>
+    <span class="committee">Praise Ministry</span>
+    <div class="song-list">
+      <strong>Song</strong>
+      <div class="song-item">Thy Word</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="time-label">8:30 – 8:45 AM</div>
+    <div class="activity-title">Liturgy of the Word</div>
+    <span class="committee">Intercessory / Service</span>
+    <div class="details">
+      <ul>
+        <li>Gospel reading only — Sunday Gospel</li>
+        <li>Install Talk Title 3: <strong>GROWTH</strong> on Bulletin Board after readings</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 8:45 AM -->
+  <div class="card praise">
+    <div class="time-label">8:45 – 9:45 AM</div>
+    <div class="activity-title">Lambs' Preparation — Praise & Worship</div>
+    <span class="committee">Praise Ministry</span>
+    <div class="details">
+      <ul>
+        <li>Vigil begins — Intercessory</li>
+        <li>SERVICE to provide Catchers & Chair. Be vigilant! Move efficiently.</li>
+      </ul>
+      <div class="song-list">
+        <strong>Songs</strong>
+        <div class="song-item">Breathe On Me (Hillsong)</div>
+        <div class="song-item">No Greater Love</div>
+        <div class="song-item">There is None Like You – Lenny LeBlanc</div>
+        <div class="song-item">I Worship You O God + I Worship You Almighty God</div>
+        <div class="song-item">You Have Made Me Glad (Charity Gale)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 9:45 AM -->
+  <div class="card highlight">
+    <div class="time-label">9:45 – 10:45 AM</div>
+    <div class="activity-title">Talk 3: Growth</div>
+    <span class="committee">Fr. Rodel Paulino</span>
+    <div class="details">
+      <ul>
+        <li>Assign attendants to sharers & guests. Offer snacks.</li>
+        <li>Have Sharers register and anointed</li>
+      </ul>
+      <div class="song-list">
+        <strong>Song</strong>
+        <div class="song-item">Refiner's Fire</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 10:45 AM -->
+  <div class="card">
+    <div class="time-label">10:45 – 11:45 AM</div>
+    <div class="activity-title">Sharing: Growth</div>
+    <div class="details">
+      <ul><li>Introduction to Sharer</li></ul>
+      <div class="name-field">Sharer 1 (Growth): _______________</div>
+      <div class="song-list" style="margin-top:8px">
+        <strong>Song</strong>
+        <div class="song-item">Psalm 23 (I am not Alone)</div>
+      </div>
+      <ul style="margin-top:6px">
+        <li>Hand out gifts to sharers after talks — 6:30 Service Team</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-divider">— — — Midday Block — — —</div>
+
+  <!-- 11:45 AM -->
+  <div class="card food">
+    <div class="time-label">11:45 AM – 12:45 PM</div>
+    <div class="activity-title">Announcements & Lunch / Group Discussion</div>
+    <span class="committee">Service / Food</span>
+    <div class="details">
+      <ul>
+        <li>Picture taking instructions — to be done at the Lower Chapel Streamer (Service)</li>
+        <li>Prepare the streamer; Photographer: (TBC)</li>
+        <li>Prayer Before Meals — Piety</li>
+        <li>Lunch and Group Discussion — Food</li>
+        <li>No guide questions; Shepherds will discuss talk with lambs</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 12:45 PM -->
+  <div class="card">
+    <div class="time-label">12:45 – 1:00 PM</div>
+    <div class="activity-title">Break & Transition</div>
+    <span class="committee">Service</span>
+    <div class="details">
+      <ul>
+        <li>Ring Bell to signal end of discussion; Freshen up</li>
+        <li>Ring Bell to call everyone back to conference room</li>
+        <li>Install Talk Title 4: <strong>TRANSFORMATION</strong> on Bulletin Board</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 1:00 PM -->
+  <div class="card">
+    <div class="time-label">1:00 – 1:30 PM</div>
+    <div class="activity-title">Letter from God / Letter to God</div>
+    <span class="committee">Conference Manager / Flock Coords</span>
+    <div class="details">
+      <ul>
+        <li>Letter from God FIRST, then Letter to God</li>
+        <li>Distribute pen and paper to lambs — Secretariat / Flock Coords</li>
+        <li>Facilitate sharing of some letters</li>
+        <li>Assign attendants to sharers & guests. Offer snacks.</li>
+        <li>Have Sharers register and anointed</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 1:30 PM -->
+  <div class="card">
+    <div class="time-label">1:30 – 2:30 PM</div>
+    <div class="activity-title">Sharing: Transformation</div>
+    <div class="details">
+      <ul><li>Introduction to Sharer</li></ul>
+      <div class="name-field">Sharer 2 (Transformation): _______________</div>
+      <div class="song-list" style="margin-top:8px">
+        <strong>Song</strong>
+        <div class="song-item">Complete</div>
+      </div>
+      <ul style="margin-top:6px">
+        <li>Hand out gifts to sharers after talks — Finance</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 2:30 PM -->
+  <div class="card">
+    <div class="time-label">2:30 – 3:15 PM</div>
+    <div class="activity-title">Divine Mercy Prayer / Prayer Before Meals</div>
+    <span class="committee">Intercessory</span>
+  </div>
+
+  <div class="card food">
+    <div class="time-label">2:30 – 3:15 PM</div>
+    <div class="activity-title">Snacks & Group Discussion</div>
+    <span class="committee">Food / Flock Coordinators</span>
+    <div class="details">
+      <ul>
+        <li>Project (LCD) questions for group discussion (Transformation)</li>
+        <li>Usher flocks to designated areas</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 3:15 PM -->
+  <div class="card">
+    <div class="time-label">3:15 – 4:00 PM</div>
+    <div class="activity-title">Ring Bell — End Discussion</div>
+    <span class="committee">Flock Coordinators</span>
+  </div>
+
+  <div class="card">
+    <div class="time-label">3:15 – 4:00 PM</div>
+    <div class="activity-title">Prepare CSH for Mass</div>
+    <span class="committee">Service / Flock Coordinators</span>
+  </div>
+
+  <div class="section-divider">— — — Evening Block — Graduation & Commissioning — — —</div>
+
+  <!-- 4:00 PM -->
+  <div class="card mass">
+    <div class="time-label">4:00 – 5:00 PM</div>
+    <div class="activity-title">Holy Mass / Graduation / Commissioning Rites</div>
+    <span class="committee">Fr. Rodel Paulino</span>
+    <div class="song-list">
+      <strong>Mass Songs</strong>
+      <div class="song-item">Entrance: Doxology</div>
+      <div class="song-item">Offertory: I Give You My Heart</div>
+      <div class="song-item">Holy: Light from Light</div>
+      <div class="song-item">Mystery of Faith: When We Eat This Bread (L fr L)</div>
+      <div class="song-item">Amen: Great Amen (Light from Light)</div>
+      <div class="song-item">Our Father (Light from Light)</div>
+      <div class="song-item">Rite of Peace: My Peace I Give Unto You</div>
+      <div class="song-item">Lamb of God: Light from Light</div>
+      <div class="song-item">Communion 1: Face to Face</div>
+      <div class="song-item">Communion 2: Power of Your Love</div>
+      <div class="song-item">Recessional: Prize of My Life</div>
+    </div>
+  </div>
+
+  <!-- 5:00 PM -->
+  <div class="card commission">
+    <div class="time-label">5:00 – 6:00 PM</div>
+    <div class="activity-title">Commissioning Rites</div>
+    <span class="committee">Praise Ministry</span>
+    <div class="details">
+      <ul>
+        <li>The Light of Christ to be sung when all candles are lighted</li>
+        <li>&lt;INSERT COMMISSIONING SCRIPT HERE&gt; — Separate Document</li>
+      </ul>
+      <div class="song-list">
+        <strong>Commissioning Songs</strong>
+        <div class="song-item">Light of Christ</div>
+        <div class="song-item">Panunumpa</div>
+        <div class="song-item">We'll Be Faithful</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card commission">
+    <div class="time-label">5:00 – 6:00 PM</div>
+    <div class="activity-title">Special Activity — Acknowledgements</div>
+    <span class="committee">Praise Ministry / Secretariat</span>
+    <div class="details">
+      <ul>
+        <li>Birthday Celebrants, Anniversaries, Thank You's</li>
+        <li>Announcements — 1st post-shepherding session (Secretariat)</li>
+      </ul>
+      <div class="song-list">
+        <strong>Song</strong>
+        <div class="song-item">May The Blessing</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6:00 PM -->
+  <div class="card closing">
+    <div class="time-label">6:00 PM</div>
+    <div class="activity-title">Closing & Pack-Up</div>
+    <span class="committee">LSS Team</span>
+    <div class="details">
+      <ul>
+        <li>Closing Prayer</li>
+        <li>Cleansing Prayer</li>
+        <li>Pack-Up / Clean-Up</li>
+      </ul>
+      <div class="song-list">
+        <strong>Closing Song</strong>
+        <div class="song-item">You Have Made Me Glad (Charity Gale)</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align:center;margin-top:24px;padding:12px;font-size:0.75rem;color:#a0aec0;">
+    Life in the Spirit Seminar No. 38 · Day 2 · March 22, 2026
+  </div>
+
+</body>
+</html>
