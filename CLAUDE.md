@@ -24,9 +24,11 @@ Live: https://arsiesh.github.io/lss_2026/
   - Resources (gid=0) — music links (Spotify, YouTube, Google Drive)
   - Lyrics (gid=1185586539) — chord/lyrics book links
   - Calendar (gid=1348165568) — practice dates & events
-  - MainEvent (gid=TBD) — banner title, date, hidden schedule link
+  - MainEvent (gid=1806297685) — banner title, date, hidden schedule link
+  - UpcomingPractices (gid=928428287) — practice date, time, location, lineup, material links
 - Falls back to hardcoded data if sheet fetch fails
 - URLs in the sheet need `https://` prefix or the fixUrl() function adds it
+- Time values support both 24h ("20:00") and 12h ("8:00 PM") format via formatTime()
 
 ## Schedule Page (index.html)
 - CSS custom properties for day theming: Day 1 = blue, Day 2 = gold
@@ -37,8 +39,16 @@ Live: https://arsiesh.github.io/lss_2026/
 ## Design Conventions
 - Schedule: dark "Sacred Editorial" aesthetic — Playfair Display headings, DM Sans body
 - Praise site: warm church community aesthetic — cream/ivory bg, burgundy + gold accents, Lora headings, Source Sans 3 body
+- Hero: "sjrm [flame icon] praise" brand lockup using praise_logo.png (secret/assets/)
+- Resource cards use platform-specific icon colors (Spotify green, YouTube red, Drive blue)
+- Calendar: 3-column CSS grid (date | event | time pill), sticky month headers, event type dots (practice=burgundy, prayer=green)
+- Upcoming Practices: cards per practice with date/time/location, lineup, material links (chords/lyrics/spotify)
 - Mobile-first, max-width containers
-- SVG cross separators and dove decorations on praise site
+- SVG cross separators on praise site
+
+## Workflow Rules
+- Always update CLAUDE.md when adding new features, sections, sheet tabs, or changing design conventions
+- Keep the Google Sheets Integration section current with all tab names and GIDs
 
 ## Deployment
 - Push to `main` branch → GitHub Pages auto-deploys
